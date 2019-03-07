@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-function App() {
+function App({ length }) {
   const [formValues, setFormValues] = useState(() => {
     let value = 0;
-    for (let i = 0, len = 10000; i < len; i++) {
+    for (let i = 0, len = length; i < len; i++) {
       value++;
     }
 
